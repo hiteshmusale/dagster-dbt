@@ -1,26 +1,11 @@
-scrape_dbt:
-  outputs:
-    dev:
-      dataset: TestScrapeDataset
-      job_execution_timeout_seconds: 30
-      job_retries: 1
-      location: US
-      method: oauth
-      priority: interactive
-      project: dagstertest-382218
-      threads: 1
-      type: bigquery
-  target: dev
 scrape_project_dbt:
+  target: dev
   outputs:
     dev:
-      dataset: TestScrapeDataset
-      job_execution_timeout_seconds: 300
-      job_retries: 1
-      location: US
-      method: oauth
-      priority: interactive
-      project: dagstertest-382218
-      threads: 1
       type: bigquery
-  target: dev
+      method: service-account
+      project: dagstertest-382218
+      dataset: TestScrapeDataset
+      #keyfile: [None]
+      keyfile: /home/dmytro_fedoru/.dbt/keyfile.json
+

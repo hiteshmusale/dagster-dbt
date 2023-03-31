@@ -2,6 +2,7 @@
 
 {{ config(materialized='table') }}
 
+--DBT model which extracts the common product names
 with source_data as (
 
     select a.title as common_product_names
