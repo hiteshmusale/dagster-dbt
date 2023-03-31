@@ -1,0 +1,7 @@
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - LOGS_CAPTURED - Started capturing logs in process (pid: 21425).
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - scrape_listings - STEP_START - Started execution of step "scrape_listings".
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - scrape_listings - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - scrape_listings - Writing file at: /home/dmytro_fedoru/dag-scrape-project/tmpr5k8_tmt/storage/scrape_listings
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - scrape_listings - ASSET_MATERIALIZATION - Materialized value scrape_listings.
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - scrape_listings - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2023-03-31 04:58:24 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - c6092fc1-ad8d-4496-8cca-2067d31e05a4 - 21425 - scrape_listings - STEP_SUCCESS - Finished execution of step "scrape_listings" in 703ms.

@@ -1,0 +1,7 @@
+[32m2023-03-31 04:56:32 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - LOGS_CAPTURED - Started capturing logs in process (pid: 20922).
+[32m2023-03-31 04:56:32 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - scrape_popup_links - STEP_START - Started execution of step "scrape_popup_links".
+[32m2023-03-31 04:56:33 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - scrape_popup_links - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2023-03-31 04:56:33 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - scrape_popup_links - Writing file at: /home/dmytro_fedoru/dag-scrape-project/tmpr5k8_tmt/storage/scrape_popup_links
+[32m2023-03-31 04:56:33 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - scrape_popup_links - ASSET_MATERIALIZATION - Materialized value scrape_popup_links.
+[32m2023-03-31 04:56:33 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - scrape_popup_links - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2023-03-31 04:56:33 +0000[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - b0328cb1-5d55-4684-833d-b58927609b88 - 20922 - scrape_popup_links - STEP_SUCCESS - Finished execution of step "scrape_popup_links" in 745ms.

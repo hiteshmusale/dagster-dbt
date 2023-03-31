@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: common_products
+    description: "dbt model for extracting common products from listings and popup_links tables"
+    columns:
+      - name: common_products_names
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
