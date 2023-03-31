@@ -5,9 +5,20 @@ import requests
 from bs4 import BeautifulSoup
 from google.cloud import bigquery
 
+from google.cloud import bigquery
+from google.oauth2 import service_account
+import os
+import json
+from pprint import pprint
+
 #Configure the BigQuery client
-client = bigquery.Client()
-#dagstertest-382218.TestScrapeDataset.listings
+service_account_info = json.load(open("/home/dmytro_fedoru/.dbt/keyfile.json"))
+credentials = service_account.Credentials.from_service_account_info(service_account_info)
+client = bigquery.Client(
+    credentials=credentials,
+    project=credentials.project_id,
+)
+
 
 #This asset scrapes the popup_links dataset
 
@@ -27,4 +38,4 @@ def scrape_popup_links():
 
     records = [{"title": title} for title in popup_links]
     errors = client.insert_rows_json(table_id, records)
-    print(errors)
+    #print(errors)

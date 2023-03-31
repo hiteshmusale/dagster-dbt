@@ -3,8 +3,20 @@ import requests
 from bs4 import BeautifulSoup
 from google.cloud import bigquery
 
-#Configure the BigQuery client
-client = bigquery.Client()
+from google.cloud import bigquery
+from google.oauth2 import service_account
+import os
+import json
+from pprint import pprint
+
+#Configuring the BigQuery client from service account key
+service_account_info = json.load(open("/home/dmytro_fedoru/.dbt/keyfile.json"))
+credentials = service_account.Credentials.from_service_account_info(service_account_info)
+client = bigquery.Client(
+    credentials=credentials,
+    project=credentials.project_id,
+)
+
 
 #This asset scrapes the listings dataset
 
