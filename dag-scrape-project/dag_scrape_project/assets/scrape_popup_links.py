@@ -24,7 +24,7 @@ client = bigquery.Client(
 
 @asset
 def scrape_popup_links():
-    url = "https://webscraper.io/test-sites/e-commerce/allinone"
+    url = "https://webscraper.io/test-sites/e-commerce/allinone-popup-links"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
 
