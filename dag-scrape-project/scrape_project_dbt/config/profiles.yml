@@ -7,5 +7,5 @@ scrape_project_dbt:
       project: dagstertest-382218
       dataset: TestScrapeDataset
       #keyfile: [None]
-      keyfile: /home/dmytro_fedoru/.dbt/keyfile.json
+      keyfile: /home/hitesh.musale/External/dagster-dbt/dag-scrape-project/scrape_project_dbt/config/keyfile.json
 

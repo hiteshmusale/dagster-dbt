@@ -12,7 +12,7 @@ import json
 from pprint import pprint
 
 #Configure the BigQuery client
-service_account_info = json.load(open("/home/dmytro_fedoru/.dbt/keyfile.json"))
+service_account_info = json.load(open("/home/hitesh.musale/External/dagster-dbt/dag-scrape-project/scrape_project_dbt/config/keyfile.json"))
 credentials = service_account.Credentials.from_service_account_info(service_account_info)
 client = bigquery.Client(
     credentials=credentials,
